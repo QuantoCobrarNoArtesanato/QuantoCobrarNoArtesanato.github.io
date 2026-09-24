@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="google-site-verification" content="ySdnlcSV7x0Qh3DTgMeEjTjidlCDp_Ch3VE7Spwy6hQ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quanto Cobrar no Artesanato | Calculadora de Preço</title>
+  <meta name="description" content="Calcule o preço ideal para seus artesanatos considerando materiais, mão de obra, custos extras e margem de lucro. Calculadora gratuita para artesãs e artesãos.">
+  <meta name="keywords" content="calculadora artesanato, quanto cobrar artesanato, preço artesanato, calcular preço artesanato, custo artesanato, margem de lucro artesanato, precificação artesanato">
+  <meta name="author" content="Quanto Cobrar no Artesanato">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#8b5e3c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quanto Cobrar no Artesanato | Calculadora de Preço">
+  <meta property="og:description" content="Descubra quanto cobrar pelo seu artesanato levando em conta materiais, tempo de trabalho, custos extras e lucro.">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://quantocobrarnoartesanato.github.io/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧶</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Quanto Cobrar no Artesanato",
+    "description":"Calculadora gratuita para ajudar artesãs e artesãos a calcular o preço de venda de peças artesanais.",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Web",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Quanto Cobrar no Artesanato - início">
+      <span class="brand-icon">🧶</span>
+      <span>
+        <strong>Quanto Cobrar</strong>
+        <small>no Artesanato</small>
+      </span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#calculadora">Calculadora</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#dicas">Dicas</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">FEITO PARA QUEM CRIA COM AS MÃOS</span>
+        <h1>Seu trabalho merece um <em>preço justo.</em></h1>
+        <p>Calcule o valor da sua peça artesanal sem esquecer materiais, seu tempo de trabalho, custos extras e a margem de lucro.</p>
+        <a class="primary-btn" href="#calculadora">Calcular meu preço <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="plant plant-one">🌿</div>
+        <div class="plant plant-two">🌱</div>
+        <div class="yarn">🧶</div>
+        <div class="needle">🪡</div>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculadora">
+      <div class="section-heading">
+        <span class="eyebrow">CALCULADORA DE PRECIFICAÇÃO</span>
+        <h2>Vamos descobrir o valor da sua peça</h2>
+        <p>Preencha os campos abaixo. Você pode alterar os valores até encontrar uma precificação que faça sentido para o seu negócio.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <form class="card form-card" id="pricingForm">
+          <div class="card-title">
+            <span class="number">01</span>
+            <div><h3>Custos da peça</h3><p>O que você gastou para produzir?</p></div>
+          </div>
+
+          <label for="materials">Materiais e insumos (R$)</label>
+          <input id="materials" type="number" min="0" step="0.01" value="20" placeholder="Ex.: 20,00">
+
+          <div class="two-cols">
+            <div>
+              <label for="hours">Horas de trabalho</label>
+              <input id="hours" type="number" min="0" step="0.1" value="3" placeholder="Ex.: 3">
+            </div>
+            <div>
+              <label for="hourly">Valor da sua hora (R$)</label>
+              <input id="hourly" type="number" min="0" step="0.01" value="15" placeholder="Ex.: 15,00">
+            </div>
+          </div>
+
+          <label for="extras">Custos extras por peça (R$)</label>
+          <input id="extras" type="number" min="0" step="0.01" value="5" placeholder="Embalagem, energia, taxa etc.">
+
+          <div class="divider"></div>
+
+          <div class="card-title">
+            <span class="number">02</span>
+            <div><h3>Sua margem</h3><p>Quanto você quer ganhar sobre o custo?</p></div>
+          </div>
+
+          <label for="profit">Margem de lucro (%) <span class="help" title="Percentual acrescentado sobre o custo total.">?</span></label>
+          <div class="range-row">
+            <input id="profit" type="range" min="0" max="200" value="40">
+            <output id="profitValue">40%</output>
+          </div>
+
+          <button class="calculate-btn" type="submit">Calcular preço <span>→</span></button>
+          <button class="clear-btn" type="button" id="clearBtn">Limpar valores</button>
+        </form>
+
+        <aside class="result-card" id="resultado" aria-live="polite">
+          <div class="result-top">
+            <span class="eyebrow">PREÇO SUGERIDO</span>
+            <span class="spark">✦</span>
+          </div>
+          <div class="price" id="finalPrice">R$ 69,30</div>
+          <p class="result-caption">por peça</p>
+
+          <div class="breakdown">
+            <div><span>Materiais</span><strong id="rMaterials">R$ 20,00</strong></div>
+            <div><span>Mão de obra</span><strong id="rLabor">R$ 45,00</strong></div>
+            <div><span>Custos extras</span><strong id="rExtras">R$ 5,00</strong></div>
+            <div class="total-cost"><span>Custo total</span><strong id="rCost">R$ 70,00</strong></div>
+            <div class="profit-line"><span>Lucro</span><strong id="rProfit">R$ 28,00</strong></div>
+          </div>
+
+          <div class="tip-box">
+            <span>💡</span>
+            <p><strong>Uma ideia:</strong> arredonde o preço para um valor fácil de comunicar e cobrar. Você também pode criar uma versão básica e outra premium da mesma peça.</p>
+          </div>
+
+          <button class="copy-btn" id="copyBtn" type="button">Copiar resumo do preço</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="how-section" id="como-funciona">
+      <div class="section-heading center">
+        <span class="eyebrow">SEM COMPLICAÇÃO</span>
+        <h2>Como a conta funciona?</h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><div>🧵</div><h3>Some os materiais</h3><p>Inclua tecido, linha, tinta, argila, aviamentos e tudo que entra diretamente na peça.</p></article>
+        <article><span>02</span><div>⏱️</div><h3>Valorize seu tempo</h3><p>Multiplicamos suas horas de trabalho pelo valor que você definiu para sua hora.</p></article>
+        <article><span>03</span><div>✨</div><h3>Adicione seu lucro</h3><p>Aplicamos a margem escolhida sobre o custo total para chegar ao preço sugerido.</p></article>
+      </div>
+    </section>
+
+    <section class="tips-section" id="dicas">
+      <div class="tips-inner">
+        <div>
+          <span class="eyebrow">PARA NÃO ESQUECER</span>
+          <h2>Seu tempo também é um custo.</h2>
+          <p>Um erro comum na precificação artesanal é considerar somente o material. Seu conhecimento, experiência e tempo de produção também fazem parte do valor da peça.</p>
+        </div>
+        <div class="check-list">
+          <p>✓ Materiais e insumos</p>
+          <p>✓ Tempo de produção</p>
+          <p>✓ Embalagem e custos indiretos</p>
+          <p>✓ Taxas de pagamento ou marketplace</p>
+          <p>✓ Margem de lucro</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="section-heading center">
+        <span class="eyebrow">DÚVIDAS FREQUENTES</span>
+        <h2>Sobre precificação artesanal</h2>
+      </div>
+      <details><summary>Como saber quanto vale minha hora de trabalho?</summary><p>Considere quanto você deseja receber pelo seu trabalho e sua capacidade real de produção. Uma forma simples de começar é definir um valor-hora e revisar esse número conforme seu negócio evolui.</p></details>
+      <details><summary>Preciso colocar a embalagem no preço?</summary><p>Sim. Se a embalagem representa um custo recorrente para cada venda, ela pode entrar como custo extra por peça.</p></details>
+      <details><summary>A calculadora substitui uma análise completa do meu negócio?</summary><p>Não. Ela é uma ferramenta prática de apoio à precificação. Compare também seus preços com o mercado, considere taxas de venda e observe o que seus clientes valorizam.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">🧶 <strong>Quanto Cobrar no Artesanato</strong></div>
+    <p>Uma ferramenta simples para quem transforma criatividade em trabalho.</p>
+    <small> © <span id="year"></span>
+      <a href="https://doitsolucoes.github.io/" target="_blank"    rel="noopener noreferrer"
+     style="color: inherit; text-decoration: none;">
+    Do I.T - Soluções em Software.
+      </a>
+    </small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
